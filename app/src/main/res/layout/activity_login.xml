@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/logo">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="18dp"
+        android:background="#fff"
+        android:hint="Email"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="18dp"
+        android:background="#fff"
+        android:hint="Password"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_alignStart="@+id/text2"
+        android:layout_alignEnd="@+id/text2"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="18dp"
+        android:text="Forgot Password?">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#fff"
+        android:layout_below="@+id/forgot"
+        android:layout_marginTop="17dp"
+        android:layout_alignStart="@+id/text2"
+        android:layout_alignEnd="@+id/text2" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Sign Up or sign in using"
+        android:layout_below="@+id/b1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textColor="#fff"
+        android:layout_below="@+id/text3"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/text2"
+        android:layout_alignEnd="@+id/text2" />
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:textColor="#fff"
+        android:layout_below="@+id/b2"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/text2"
+        android:layout_alignEnd="@+id/text2" />
+</RelativeLayout>
